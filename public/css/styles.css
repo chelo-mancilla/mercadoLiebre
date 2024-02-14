@@ -1,6 +1,38 @@
-header {
+.html {
   font-family: "Roboto", sans-serif;
+  font-size: ;
 }
-.cabecera {
+.body__reset {
+  margin: 0;
+  padding: 0;
+}
+.header {
   background-color: #eac926;
+  font-size: 12px;
+}
+.header__logo {
+  width: 25vh;
+}
+.header__search-bar--input {
+  height: 2rem;
+}
+.main {
+  font-size: 12px;
+}
+.main__title {
+  font-size: 24px;
+}
+.main__article--price {
+  font-size: 18px;
+}
+
+.main__article--off {
+  font-size: 16px;
+}
+
+.main__article--description {
+  font-size: 16px;
+}
+.footer {
+  font-size: 12px;
 }
