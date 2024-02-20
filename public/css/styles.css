@@ -10,12 +10,13 @@ a {
 
 .body__reset {
   font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
 }
 
 .main-header {
   background-color: #eac926;
   font-size: 12px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .main-header__top-bar--logo {
@@ -38,22 +39,90 @@ a {
   border: solid 1px;
 }
 
+.header__create-form {
+  padding: 15px;
+}
+
+.create-form__form-control {
+  margin-bottom: 15px;
+
+}
+
+.create-form__form-control label {
+  margin-bottom: 5px;
+  font-style: italic;
+  display: block;
+}
+
+ .create-form__form-control--input {
+  width: 100%;
+  padding: 8px;
+ }
+
+ .create-form__form-control--button {
+  background-color: #39b54a;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+ }
+
 .main {
+  display: flex;
+  flex-direction: column;
   font-size: 12px;
+  width: 90vw;
+  text-align: start;
+  margin: auto;
 }
 
 .main__title {
   font-size: 24px;
+  /*align-items: start;*/
+}
+
+.main__article {
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.main__article--img {
+  width: 100%;
 }
 
 .main-header__top-bar--icon-dand {
   padding: 1px;
 }
 
+.main__article--product-desc-box {
+  position: relative;
+}
+
+.main__article--product-desc-box > .product-delivery-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  color: #39b54a;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.product-delivery-icon {
+
+}
+
+
 .main-header__button-burger {
-  display: flex;  
+  display: flex;
   justify-content: center;
-  width: 100%;
+  margin: auto;
   background-color: transparent;
   border: none;
 }
@@ -82,6 +151,7 @@ a {
   flex-direction: column;
   font-size: 12px;
   align-items: center;
+  background-color: #fff;
 }
 
 .footer__article {
@@ -102,17 +172,10 @@ a {
   align-self: flex-start;
 }
 
+@media (min-width: 460px){
 
-.product-desc-box > .product-delivery-icon {
-  display: block;
-  font-size: 16px;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #39b54a;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  right: 20px;
-  top: -15px;
+}
+
+@media (min-width: 768px) {
+
 }
