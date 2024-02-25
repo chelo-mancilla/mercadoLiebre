@@ -200,14 +200,16 @@ a {
 .main__article--off {
   width: 70%;
   text-align: center;
-  color: #39b54a;
   padding-bottom: 5px;
+  font-size: 16px;
+  color: #39b54a;
 }
 
 .main__article--description {
   display: none;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-size: 16px;
   color: #666;
 }
 
@@ -216,11 +218,6 @@ a {
   .main__article--description {
     display: block;
   };
-}
-
-
-.main__article--description .main__article--off {
-  font-size: 16px;
 }
 
 .footer {
@@ -247,8 +244,8 @@ a {
 }
 
  .footer__article--icon {
-  font-size: 25px;
-  padding: 15px;
+  font-size: 2em;
+  padding: 10px;
   color: #1259c3;
  }
 
