@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Registro de usuario</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/public/css/normalize.css" />
+        <script
+          src="https://kit.fontawesome.com/fd3fd2bc99.js"
+          crossorigin="anonymous"
+        ></script>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/register-styles.css" />
+    </head>
+    <body>
+        <header>
+          
+        </header>
+        <main>
+            <form action="/registro" method="POST">
+                <div>
+                    <label for="nombre">Nombre y apellido:</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="user">Nombre de usuari@:</label>
+                    <input type="text" name="user" id="user">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email"name="email" id="email">
+                </div>
+                <div>
+                    <label for="nacimiento">Fecha de nacimiento:</label>
+                    <input type="text" name="nacimiento" id="nacimiento">
+                </div>
+                <div>
+                    <label for="adress">Domicilio:</label>
+                    <input type="text" name="adress" id="adress">
+                </div>
+                <div>
+                    <label>Perfil del usuario</label>
+                    <div>
+                        <input type="radio" name="perfil" value="comprador">Comprador
+                        <input type="radio" name="perfil" value="vendedor">Vendedor
+                    </div>
+                </div>
+                <div>
+                    <label>Categorias de interés</label>
+                    <div>
+                        <input type="checkbox" name="intereses" value="electro">Electro
+                        <input type="checkbox" name="intereses" value="moda">Moda
+                        <input type="checkbox" name="intereses" value="hogar">Hogar
+                        <input type="checkbox" name="intereses" value="jugueteria">Juguetería
+                        <input type="checkbox" name="intereses" value="vidaSana">Vida Sana
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
+
