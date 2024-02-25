@@ -25,24 +25,105 @@
         <link rel="stylesheet" href="/css/login-styles.css" />
     </head>
     <body>
-        <header>
-          
+        <header class="main-header">
+            <div class="main-header__top-bar">
+                <img class="main-header__top-bar--logo" src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"/>
+                <form action="/home" method="GET" class="main-header__search-bar">
+                    <input class="main-header__search-bar--input" type="" placeholder="Buscar productos, marcas"/>
+                    <button class="main-header__search-bar--button">
+                        <i class="main-header__search-bar--icon fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div class="main-header__top-bar--box-title">
+                    <p class="main-header__top-bar--title">
+                        <i class="fa-solid fa-hand-holding-dollar main-header__top-bar--icon-dand"></i>
+                        Comprá en cuotas y sin tarjeta de crédito
+                    </p>
+                </div>
+            </div>
+            <nav class="main-header__nav">
+                <div>
+                    <ul type="none">
+                        <li>
+                            <a href=""><p>Ofertas</p></a>
+                        </li>
+                        <li>
+                            <a href=""><p>Tiendas Oficiales</p></a>
+                        </li>
+                        <li>
+                            <a href=""><p>Vender</p></a>
+                        </li>
+                        <li>
+                            <a href=""><p>Ayuda</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul type="none">
+                        <li>
+                            <a href="/register"><p>Crear tu cuenta</p></a>
+                            <i class="fa-regular fa-id-card"></i>
+                        </li>
+                        <li>
+                            <a href="/login"><p>Ingresá</p></a>
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </li>
+                        <li>
+                            <a href=""><p>Mis Compras</p></a>
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="main-header__button-burger">
+                <div class="main-header__button-burger--box-icon product-desc-box product-delivery-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </button>
         </header>
-        <main>
-            <form action="/login" method="POST">
-                <div>
-                    <label for="user"></label>
-                    <input type="text" name="user" id="user" placeholder="Nombre de usuario">
-                </div>
-                <div>
-                    <label for="password"></label>
-                    <input type="password"name="password" id="password" placeholder="Elegí tu contraseña">
-                </div>
-                <button type="submit" class="create-form__form-control--button" placeholder="enviar">Enviar</button>
-            </form>
+        <main class="main">
+            <div class="main__container">
+                <form class="main__create-form" action="/login" method="POST">
+                    <div class="create-form__form-control">
+                        <label for="user"></label>
+                        <input class="create-form__form-control--input" type="text" name="user" id="user" placeholder="Nombre de usuario">
+                    </div>
+                    <div class="create-form__form-control">
+                        <label for="password"></label>
+                        <input class="create-form__form-control--input" type="password"name="password" id="password" placeholder="Elegí tu contraseña">
+                    </div>
+                    <button class="create-form__form-control--button" type="submit" class="create-form__form-control--button" placeholder="enviar">Enviar</button>
+                </form>
+            </div>
         </main>
-        <footer>
-          
+        <footer class="footer">
+            <article class="footer__article">
+                <i class="fa-solid fa-credit-card footer__article--icon"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>
+                  Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+                  efectivo en puntos de pago. ¡Y siempre es seguro!
+                </p>
+            </article>
+            <article class="footer__article">
+                <div><i class="fa-solid fa-gift footer__article--icon"></i></div>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p>
+                  Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+                  miles de productos. Es un beneficio de Mercado Puntos.
+                </p>
+            </article>
+            <article class="footer__article">
+                <i class="fa-solid fa-user-shield footer__article--icon"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>
+                  ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+                  hacer, porque estás siempre protegid@.
+                </p>
+            </article>
+            <article class="footer__article--end">
+                <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            </article>
         </footer>
     </body>
 </html>
