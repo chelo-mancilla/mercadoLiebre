@@ -25,53 +25,58 @@
         <link rel="stylesheet" href="/css/register-styles.css" />
     </head>
     <body>
-        <header>
-          
+        <header class="main-header">
+            <div class="main-header__top-bar">
+                <img class="main-header__top-bar--logo" src="/img/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"/>
+            </div>
         </header>
-        <main>
-            <form action="/registro" method="POST">
-                <div>
-                    <label for="nombre">Nombre y apellido:</label>
-                    <input type="text" name="nombre" id="nombre">
-                </div>
-                <div>
-                    <label for="user">Nombre de usuari@:</label>
-                    <input type="text" name="user" id="user">
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email"name="email" id="email">
-                </div>
-                <div>
-                    <label for="nacimiento">Fecha de nacimiento:</label>
-                    <input type="text" name="nacimiento" id="nacimiento">
-                </div>
-                <div>
-                    <label for="adress">Domicilio:</label>
-                    <input type="text" name="adress" id="adress">
-                </div>
-                <div>
-                    <label>Perfil del usuario</label>
-                    <div>
-                        <input type="radio" name="perfil" value="comprador">Comprador
-                        <input type="radio" name="perfil" value="vendedor">Vendedor
+        <main class="main">
+            <div class="main__container">
+                <form class="main__create-form" action="/registro" method="POST">
+                    <div class="create-form__form-control">
+                        <label for="nombre"></label>
+                        <input class="create-form__form-control--input" type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
                     </div>
-                </div>
-                <div>
-                    <label>Categorias de interés</label>
-                    <div>
-                        <input type="checkbox" name="intereses" value="electro">Electro
-                        <input type="checkbox" name="intereses" value="moda">Moda
-                        <input type="checkbox" name="intereses" value="hogar">Hogar
-                        <input type="checkbox" name="intereses" value="jugueteria">Juguetería
-                        <input type="checkbox" name="intereses" value="vidaSana">Vida Sana
+                    <div class="create-form__form-control">
+                        <label for="user"></label>
+                        <input class="create-form__form-control--input" type="text" name="user" id="user" placeholder="Nombre de usuario">
                     </div>
-                </div>
-            </form>
+                    <div class="create-form__form-control">
+                        <label for="email"></label>
+                        <input  class="create-form__form-control--input" type="email"name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="create-form__form-control">
+                        <label for="nacimiento">Fecha de nacimiento</label>
+                        <input  class="create-form__form-control--input" type="text" name="nacimiento" id="nacimiento" placeholder="mm/dd/yyyy ">
+                    </div>
+                    <div class="create-form__form-control">
+                        <label for="adress"></label>
+                        <input class="create-form__form-control--input" type="text" name="adress" id="adress" placeholder="Domicilio">
+                    </div>
+                    <div class="create-form__form-control">
+                        <label>Perfil del usuario</label>
+                        <div class="create-form__form-control--box-radio">
+                            <input type="radio" name="perfil" value="comprador">Comprador
+                            <input type="radio" name="perfil" value="vendedor">Vendedor
+                        </div>
+                    </div>
+                    <div class="create-form__form-control">
+                        <label>Categorias de interés</label>
+                        <div class="create-form__form-control--box-checkbox">
+                            <label for="electro"><input type="checkbox" name="intereses" value="electro">Electro</label>
+                            <label for="moda"><input type="checkbox" name="intereses" value="moda">Moda</label>
+                            <label for="hogar"><input type="checkbox" name="intereses" value="hogar">Hogar</label>
+                            <label for="jugueteria"><input type="checkbox" name="intereses" value="jugueteria">Juguetería</label>
+                            <label for="vidaSana"><input type="checkbox" name="intereses" value="vidaSana">Vida Sana</label>
+                        </div>
+                    </div>
+                    <div class="create-form__form-control--box-button">
+                        <button type="reset" class="create-form__form-control--button">Borrar</button>
+                        <button type="submit" class="create-form__form-control--button">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </main>
-        <footer>
-
-        </footer>
     </body>
 </html>
 
